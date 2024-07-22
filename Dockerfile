@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER rvravi1@gmail.com
+MAINTAINER rvravi12@gmail.com
 
 # Install apache2, zip, and unzip
 RUN apt-get update && \
