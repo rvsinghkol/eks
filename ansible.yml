@@ -1,0 +1,12 @@
+- hosts: M2
+  become: ture
+  tasks:
+    - name: delete old deployment
+      command: kubectl delete -f /home/m2admin/K8/Remote/Deployment.yml
+    - name: delete old service
+      command: kubectl delete -f /home/m2admin/K8/Remote/service.yml
+    - name: create new deployment
+      command: kubectl apply -f /home/m2admin/K8/Remote/Deployment.yml
+    - name: create new service
+      command: kubectl apply -f /home/m2admin/K8/Remote/service.yml
+
