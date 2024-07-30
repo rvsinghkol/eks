@@ -8,10 +8,10 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Copy the website zip file to the web server directory
-COPY photogenic.zip /usr/share/nginx/
+COPY photogenic.zip /var/www/html/
 
 # Set the working directory
-WORKDIR /usr/share/nginx/
+WORKDIR /var/www/html/
 
 # Unzip the website content
 RUN unzip photogenic.zip
