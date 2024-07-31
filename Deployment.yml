@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx-container
-        image: rvsingh146/tagreport:v1.22
+        image: rvsingh146/tagreport:v1.35
         imagePullPolicy: Always
         ports:
         - containerPort: 80
